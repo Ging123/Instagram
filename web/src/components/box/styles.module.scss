@@ -7,8 +7,8 @@
 
   @include media-query(26.25rem) {
     background:white;
-    border:2px solid var(--separator);
+    border:1px solid var(--separator);
     border-radius:4px;
-    width:25rem;
+    width:22rem;
   }
 }

@@ -21,6 +21,18 @@
   transform:translate(-50%, -50%);
 }
 
+%darker-click-effect {
+  cursor:pointer;
+
+  &:hover {
+    filter:brightness(98%);
+  }
+
+  &:active {
+    filter:brightness(90%);
+  }
+}
+
 %opacity-click-effect {
   cursor:pointer;
 

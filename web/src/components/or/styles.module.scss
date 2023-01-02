@@ -1,0 +1,26 @@
+@import "@/styles/utils.scss";
+
+.or {
+  @include flex(row, center, center);
+  color:var(--gray_2);
+  display:flex;
+  font-size:.8rem;
+  font-weight:550;
+  position:relative;
+  width:100%;
+
+  &::before, &::after {
+    content:"";
+    border-top:1px solid var(--separator);
+    margin-bottom:3px;
+    width:50%;
+  }
+
+  &::before {
+    margin-right:20px;
+  }
+
+  &::after {
+    margin-left:20px;
+  }
+}

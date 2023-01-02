@@ -1,4 +1,4 @@
-import joinTwoStringsWithSpace from "../../../../utils/joinTwoStringsWithSpace";
+import joinTwoStringsWithSpace from "../../utils/joinTwoStringsWithSpace";
 import styles from "./styles.module.scss";
 
 interface props {
@@ -7,7 +7,7 @@ interface props {
   testId?:string;
 }
 
-const WhiteBox = (props:props) => {
+const Box = (props:props) => {
   const className = joinTwoStringsWithSpace(styles.white_box, props.className);
   
   return (
@@ -17,4 +17,4 @@ const WhiteBox = (props:props) => {
   );
 };
 
-export default WhiteBox;
+export default Box;

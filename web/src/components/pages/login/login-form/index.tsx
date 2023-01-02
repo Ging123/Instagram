@@ -1,11 +1,14 @@
 import Button from "../../../../components/button";
 import Input from "../../../../components/input";
 
+import Logo from "../../../../components/logo";
+import Or from "../../../../components/or";
+
 import styles from "./styles.module.scss";
 import Checkbox from "../../../checkbox";
 
 import { useState } from "react";
-import Box from "../box";
+import Box from "../../../box";
 
 const LoginForm = () => {
   const [ login, setLogin ] = useState("");
@@ -14,7 +17,7 @@ const LoginForm = () => {
 
   return (
     <Box className={ styles.main_container }>
-      <div className={ styles.logo }/>
+      <Logo margin="60px 0px 40px 0px"/>
       
       <form className={ styles.form }>
         <Input
@@ -45,7 +48,7 @@ const LoginForm = () => {
           type="submit"
         />
 
-        <div className={ styles.or }>OR</div>
+        <Or margin="20px 0px 15px 0px"/>
       </form>
 
       <strong className={ styles.login_with_facebook }>

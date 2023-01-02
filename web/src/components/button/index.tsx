@@ -4,6 +4,7 @@ import { buttonType } from "../../../src/types/input";
 import styles from "./styles.module.scss";
 
 interface props {
+  children?:React.ReactNode;
   className?:string;
   content?:string;
   onClick?:() => void;
@@ -19,6 +20,7 @@ const Button = (props:props) => {
       type={ props.type }
       onClick={ props.onClick }
     >
+      { props.children }
       { props.content }
     </button>
   );

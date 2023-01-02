@@ -1,0 +1,65 @@
+@import "@/styles/utils.scss";
+
+%button {
+  background:var(--main_blue);
+  color:white;
+}
+
+.sign_up_box_form_container {
+  @include flex(column, center);
+
+  h1 {
+    margin:0px;
+  }
+}
+
+.sub_title {
+  font-size:1rem;
+  font-weight:600;
+  text-align:center;
+  margin:0px;
+  max-width:16rem;
+}
+
+.signup_form {
+  padding:20px 30px 25px 30px;
+  width:100%;
+
+  p {
+    font-size:.8rem;
+    text-align:center;
+    margin-top:20px;
+  }
+
+  .input {
+    margin-top:7px;
+  }
+
+  a {
+    @extend %opacity-click-effect;
+    color:var(--blue);
+  }
+
+  .sign_up_button {
+    @extend %darker-click-effect; 
+    @extend %button;
+    margin-top:10px;
+  }
+}
+
+.login_with_facebook {
+  @include flex(row, center, center);
+  @extend %darker-click-effect;
+  @extend %button;
+
+  .facebook_icon {
+    background-image:url("/images/icons/icons-sprites.png");
+    background-position:18px -299px;
+    background-size:auto;
+    height:20px;
+    margin-right:7px;
+    margin-top:3px;
+    position:relative;
+    width:18px;
+  }
+}

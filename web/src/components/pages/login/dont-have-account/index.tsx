@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
 
-import Box from "../box";
+import Box from "../../../box";
 
 const DontHaveAccount = () => {
   return (
@@ -10,7 +10,7 @@ const DontHaveAccount = () => {
         Don&#39;t have an account?
         <strong>
           <Link href="/signup">
-            Sign in
+            Sign up
           </Link>
         </strong>
       </p>
