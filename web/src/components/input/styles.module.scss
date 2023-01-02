@@ -1,0 +1,55 @@
+@import "@/styles/utils.scss";
+
+.container {
+  position:relative;
+  width:100%;
+}
+
+.input {
+  background:var(--gray_1);
+  border:1px solid var(--separator);
+  border-radius:4px;
+  padding:10px 10px;
+  text-overflow:ellipsis;
+  width:100%;
+
+  &:focus {
+    outline:1px solid gray;
+  }
+
+  &.focus {
+    padding:14px 60px 6px 10px;
+  }
+}
+
+.label {
+  @extend %align-y;
+  cursor:text;
+  color:gray;
+  font-size:0.875rem;
+  left:11px;
+  max-width:90%;
+  overflow:hidden;
+  position:absolute;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+
+  &.focus {
+    top:3px;
+    font-size:0.625rem;
+    transform:none;
+  }
+}
+
+.password_visibility_button {
+  @extend %opacity-click-effect;
+  @extend %align-y;
+  background:none;
+  border:none;
+  color:var(--black_1);
+  cursor:pointer;
+  font-size:.9rem;
+  font-weight:700;
+  position:absolute;
+  right:10px;
+}

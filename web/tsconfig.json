@@ -28,6 +28,7 @@
       "@/services/*": ["src/services/*"],
       "@/styles/*": ["src/styles/*"],
       "@/utils/*": ["src/utils/*"],
+      "@/pages-styles/*": ["src/pages-styles/*"]
     }
   },
   "include": [

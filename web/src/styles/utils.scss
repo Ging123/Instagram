@@ -1,0 +1,40 @@
+@mixin flex($direction:null, $align-items:null, $justify-content:null) {
+  align-items:$align-items;
+  display:flex;
+  flex-direction:$direction;
+  justify-content:$justify-content;
+}
+
+%align-y {
+  top:50%;
+  transform:translateY(-50%);
+}
+
+%align-x {
+  left:50%;
+  transform:translateX(-50%);
+}
+
+%align-x-and-y {
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+%opacity-click-effect {
+  cursor:pointer;
+
+  &:hover {
+    opacity:.9;
+  }
+
+  &:active {
+    opacity:.7;
+  }
+}
+
+@mixin media-query($min-width) {
+  @media (min-width:$min-width) {
+    @content;
+  }
+}

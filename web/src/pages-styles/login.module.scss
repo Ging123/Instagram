@@ -1,0 +1,10 @@
+@import "@/styles/utils.scss";
+
+.login_page_wrapper {
+  width:100%;
+
+  @include media-query(26.25rem) {
+    @include flex(row, center, center);
+    padding-top:4rem;
+  }
+}

@@ -1,0 +1,38 @@
+@import "@/styles/utils.scss";
+
+.checkbox_container {
+  @include flex("row", "center");
+  display:flex;
+  width:100%;
+  
+  label {
+    color:var(--black_1);
+    font-size:.8rem;
+    margin-left:10px;
+    margin-top:2px;
+  }
+
+  input {
+    position:absolute;
+    opacity:0;
+  }
+
+  .checkbox {
+    border:1px solid var(--separator);
+    border-radius:3px;
+    padding:8px;
+    position:relative;
+
+    &.checked::before {
+      content:"";
+      border-bottom:2px solid var(--black_1);
+      border-left:1px solid var(--black_1);
+      height:4px;
+      left:4px;
+      position:absolute;
+      top:3px;
+      transform:rotateZ(-45deg);
+      width:8px;
+    }
+  }
+}

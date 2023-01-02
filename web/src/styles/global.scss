@@ -1,0 +1,23 @@
+* {
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+  background:var(--main_background);
+}
+
+a {
+  color:var(--black_1);
+  text-decoration:none;
+}
+
+:root {
+  --gray_1:#fafafa;
+  --gray_2:#8e8e8e;
+  --black_1:#262626;
+  --main_background:#efefef;
+  --main_blue:#0095f6;
+  --blue:#385185;
+  --separator:#dbdbdb;
+}

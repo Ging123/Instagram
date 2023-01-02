@@ -6,6 +6,6 @@
   ],
   "rules": {
     "semi":"warn",
-    "quotes":["warn", "double"]
+    "quotes":[ "warn", "double" ]
   }
 }

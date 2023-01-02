@@ -1,0 +1,11 @@
+@import "@/styles/utils.scss";
+
+.button {
+  @extend %opacity-click-effect;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:800;
+  padding:7px;
+  width:100%;
+}

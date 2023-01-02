@@ -1,0 +1,17 @@
+@import "@/styles/utils.scss";
+
+.dont_have_an_account {
+  color:var(--black_1) !important;
+  margin-top:10px;
+  padding:10px;
+  text-align:center;
+
+  strong {
+    @extend %opacity-click-effect;
+    margin-left:3px;
+    
+    a {
+      color:var(--main_blue);
+    }
+  }
+}

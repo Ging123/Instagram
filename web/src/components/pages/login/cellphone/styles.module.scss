@@ -1,0 +1,26 @@
+@import "@/styles/utils.scss";
+
+.cellphone_container {
+  display:none;
+  position:relative;
+
+  @include media-query(62.5rem) {
+    display:block;
+  }
+}
+
+.screenshot {
+  border-radius:20px;
+  height:510px;
+  left:163px;
+  position:absolute;
+  opacity:0;
+  overflow:hidden;
+  transition:opacity 2s;
+  top:24px;
+  width:280px;
+
+  &.visible {
+    opacity:1;
+  }
+}
