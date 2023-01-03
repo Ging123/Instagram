@@ -1,0 +1,77 @@
+@import "@/styles/utils.scss";
+
+.birthday_form_container {
+  padding:20px 40px;
+
+  .cake_icon {
+    @extend %align-x;
+    background-image:url("/images/icons/icons-sprites-2.png");
+    background-position:0px 0px;
+    background-size:auto;
+    height:97px;
+    position:relative;
+    width:140px;
+  }
+
+  h1 {
+    color:var(--black_1);
+    font-size:1rem;
+    text-align:center;
+  }
+
+  .sub_title {
+    color:var(--black_1);
+    font-size:.9rem;
+    margin:0;
+    text-align:center;
+  }
+
+  .why_do_you_need {
+    @extend %opacity-click-effect;
+    background:none;
+    border:none;
+    color:var(--main_blue);
+    font-size:.9rem;
+    margin-top:3px;
+    padding:0;
+    text-align:center;
+    width:100%;
+  }
+
+  .selects_container {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    margin-top:20px;
+    width:100%;
+
+    .select {
+      margin-right:5px;
+    }
+  }
+
+  .you_need_to_enter_your_birth_day, .use_your_own_birth_day {
+    display:block;
+    font-size:.8rem;
+    text-align:center;
+    width:100%;
+  }
+
+  .use_your_own_birth_day {
+    margin-top:20px;
+  }
+
+  .next_button {
+    background:var(--main_blue);
+    color:white;
+  }
+
+  .back {
+    @extend %opacity-click-effect;
+    color:var(--main_blue);
+    display:block;
+    font-weight:550;
+    margin-top:15px;
+    text-align:center;
+    width:100%;
+  }
+}

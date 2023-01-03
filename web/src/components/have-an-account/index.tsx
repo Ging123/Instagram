@@ -1,4 +1,4 @@
-import Box from "../../../../components/box";
+import Box from "../box";
 import styles from "./styles.module.scss";
 
 import Link from "next/link";

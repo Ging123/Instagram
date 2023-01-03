@@ -1,21 +1,20 @@
-import SignupForm from "../components/pages/signup/sign-up-form";
+import BirthdayForm from "../components/pages/birthday/birthday-form";
 import HaveAnAccount from "../components/have-an-account";
 
-import styles from "../pages-styles/signup.module.scss";
+import styles from "../pages-styles/birthday.module.scss";
 import GetTheApp from "../components/getTheApp";
 
 import Head from "next/head";
-import React from "react";
 
-const SignUpPage = () => {
+const Birthday = () => {
   return (
     <>
       <Head>
         <title>Sign up • Instagram</title>
       </Head>
 
-      <main className={ styles.singup_page_wrapper }>
-        <SignupForm/>
+      <main className={ styles.birthday_page_wrapper }>
+        <BirthdayForm/>
         <HaveAnAccount/>
         <GetTheApp/>
       </main>
@@ -23,4 +22,4 @@ const SignUpPage = () => {
   );
 };
 
-export default SignUpPage;
+export default Birthday;
