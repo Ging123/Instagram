@@ -1,0 +1,58 @@
+@import "@/styles/utils.scss";
+
+.confirmation_code_form_container {
+  padding:20px 40px;
+
+  .message_icon {
+    @extend %align-x;
+    background-image:url("/images/icons/icons-sprites-2.png");
+    background-position:120px 0px;
+    background-size:auto;
+    height:69px;
+    position:relative;
+    width:96px;
+  }
+
+  h1 {
+    color:var(--black_1);
+    font-size:1rem;
+    text-align:center;
+  }
+
+  .sub_title {
+    color:var(--black_1);
+    font-size:.9rem;
+    margin:0;
+    text-align:center;
+  }
+
+  .re_send_code {
+    @extend %opacity-click-effect;
+    background:none;
+    border:none;
+    color:var(--main_blue);
+    font-size:.9rem;
+    font-weight:650;
+    margin-bottom:25px;
+    margin-top:3px;
+  }
+
+  .input {
+    margin-bottom:15px;
+  }
+
+  .button {
+    background:var(--main_blue);
+    color:white;
+  }
+
+  .back {
+    @extend %opacity-click-effect;
+    color:var(--main_blue);
+    display:block;
+    font-weight:550;
+    margin-top:15px;
+    text-align:center;
+    width:100%;
+  }
+}

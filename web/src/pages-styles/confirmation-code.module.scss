@@ -1,0 +1,10 @@
+@import "@/styles/utils.scss";
+
+.confirmation_code_page_wrapper {
+  width:100%;
+
+  @include media-query(26.25rem) {
+    @include flex(column, center, center);
+    padding-top:.7rem;
+  }
+}
