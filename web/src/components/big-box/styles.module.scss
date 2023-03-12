@@ -1,0 +1,16 @@
+@import "@/styles/utils.scss";
+
+.white_box {
+  background:white;
+  border-bottom:1px solid var(--separator);
+  border-top:1px solid var(--separator);
+  color:var(--gray_3);
+  font-size:.9rem;
+  width:100%;
+
+  @include media-query(31.875rem) {
+    border:1px solid var(--separator);
+    border-radius:4px;
+    width:30rem;
+  }
+}

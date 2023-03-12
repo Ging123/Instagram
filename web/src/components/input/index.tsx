@@ -1,7 +1,7 @@
 import joinTwoStringsWithSpace from "../../utils/joinTwoStringsWithSpace";
 import PasswordVisibility from "./password-visibility";
 
-import { inputType } from "../../../src/types/input";
+import { inputType } from "../../shared/types/input";
 import styles from "./styles.module.scss";
 
 import { useState } from "react";

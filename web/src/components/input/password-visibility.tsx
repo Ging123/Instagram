@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { inputType } from "src/types/input";
+import { inputType } from "src/shared/types/input";
 
 import styles from "./styles.module.scss";
 

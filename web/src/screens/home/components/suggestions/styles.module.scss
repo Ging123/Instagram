@@ -1,0 +1,74 @@
+@import "@/styles/utils.scss";
+
+.home_suggestions_wrapper {
+  @include flex(column, center, null);
+  margin-top:80px;
+
+  @include media-query(45rem) {
+    margin-top:20px;
+  }
+}
+
+.title {
+  color:var(--black_1); 
+  font-size:1rem;
+  width:100%;
+
+  @include media-query(31.875rem) {
+    width:30rem;
+  }
+}
+
+.perfil_container {
+  @include flex(row);
+  position:relative;
+  padding:10px 15px;
+}
+
+.perfil_image {
+  border-radius:100px;
+  height:50px;
+  object-fit:cover;
+  overflow:hidden;
+  position:relative;
+  width:50px;
+}
+
+.perfil_description {
+  margin-left:15px;
+  width:50%;
+
+  strong {
+    //@extend %text-overflow-ellipsis;
+    color:var(--black_1);
+    display:block;
+    position:relative;
+
+    &::after {
+      background-image:url("/images/icons/icons-sprites.png");
+      background-position:440px 33px;
+      background-size:auto;
+      content:"";
+      height:20px;
+      position:absolute;
+      top:-2px;
+      width:30px;
+    }
+  }
+
+  p {
+    @extend %text-overflow-ellipsis;
+    margin:3px 0px;
+  }
+
+}
+
+.follows_button {
+  @extend %align-y;
+  background:var(--main_blue);
+  color:white;
+  position:absolute;
+  right:15px;
+  text-align:center;
+  width:100px !important;
+}

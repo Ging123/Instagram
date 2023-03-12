@@ -1,5 +1,5 @@
 import joinTwoStringsWithSpace from "../../utils/joinTwoStringsWithSpace";
-import { buttonType } from "../../../src/types/input";
+import { buttonType } from "../../shared/types/input";
 
 import styles from "./styles.module.scss";
 

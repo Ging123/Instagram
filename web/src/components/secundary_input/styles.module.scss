@@ -1,3 +1,9 @@
+@import "@/styles/utils.scss";
+
+.input_container {
+  position:relative;
+}
+
 .input {
   background:var(--main_background);
   border:1px solid var(--separator);
@@ -13,4 +19,23 @@
   &:focus {
     outline:1px solid gray;
   }
+
+  &::-webkit-search-cancel-button {
+    display:none;
+  }
+}
+
+.search_icon {
+  @extend %align-y;
+  left:15px;
+  pointer-events:none;
+  position:absolute;
+}
+
+.close_icon {
+  @extend %darker-click-effect;
+  @extend %align-y;
+  color:var(--gray_2);
+  position:absolute;
+  right:15px;
 }

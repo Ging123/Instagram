@@ -2,10 +2,24 @@
   "plugins": ["jsx-a11y"],
   "extends": [
     "next/core-web-vitals",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.ts",
+        "**/*.test.tsx"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
   ],
   "rules": {
     "semi":"warn",
-    "quotes":[ "warn", "double" ]
+    "quotes":[ "warn", "double" ],
+    "react/react-in-jsx-scope": "off"
   }
 }

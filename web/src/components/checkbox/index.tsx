@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 
 interface props {
   className?:string;
+  checkboxTestId?:string;
   id:string;
   label:string;
   onChange:() => void;
@@ -24,9 +25,12 @@ const Checkbox = (props:props) => {
       role="presentation"
     >
       <input 
+        checked={props.value}
+        data-testid={ props.checkboxTestId }
         id={ props.id }
         type="checkbox"
         value={ `${props.value}` }
+        onChange={() => {}}
       />
       <span className={ getCheckboxClassName() }/>
       <label htmlFor={ props.id }>{ props.label }</label>

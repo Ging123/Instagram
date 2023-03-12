@@ -1,0 +1,128 @@
+@import "@/styles/utils.scss";
+
+.nav_bar_container {
+  @include flex(row, center);
+  background:white;
+  bottom:0px;
+  border:1px solid var(--separator);
+  gap:15px;
+  left:0px;
+  padding:5px 30px;
+  position:fixed;
+  width:100%;
+  z-index:var(--nav-index);
+
+  @include media-query(45rem) {
+    @include flex(column, normal, space-between);
+    bottom:auto;
+    height:100vh;
+    padding:40px 20px;
+    top:0px;
+    width:auto;
+  }
+
+  @include media-query(65.625rem) {
+    width:250px;
+  }
+}
+
+.main_nav_container {
+  @include flex(row, center, space-between);
+  width:100%;
+  
+  @include media-query(45rem) {
+    display:block;
+  }
+}
+
+.logo {
+  padding:0px 5px;
+  margin:0px;
+  
+  .icon {
+    border-radius:100px;
+  }
+}
+
+.nav_link {
+  @include change-color-effect(var(--gray_1), .5);
+  @include flex(row, center);
+  border-radius:100px;
+  display:flex;
+  gap:10px;
+  padding:10px 5px;
+
+  @include media-query(45rem) {
+    margin:15px 0px;
+  }
+
+  p {
+    display:none;
+    margin:0px;
+    margin-top:3px;
+  }
+
+  &.more {
+    display:none;
+
+    @include media-query(45rem) {
+      display:flex;
+      justify-self:flex-end;
+    }
+  }
+
+  @include media-query(65.625rem) {
+    width:100%;
+
+    p {
+      display:block;
+    }
+  }
+}
+
+.user_image {
+  border-radius:100px;
+}
+
+.desktop_icon_only {
+  display:none; 
+  
+  @include media-query(45rem) {
+    display:flex;
+  }
+}
+
+.more_container {
+  position:relative;
+}
+
+.more_options_container {
+  left:-40px;
+  position:absolute;
+  top:-260px;
+
+  li {
+    @include change-color-effect(var(--gray_1), 1);
+    @include flex(row, center, space-between);
+    background:white;
+    border-bottom:1px solid var(--separator);
+    box-shadow:1px 1px 10px var(--separator);
+    list-style-type:none;
+    padding:12px 10px;
+    width:250px;
+
+    &:first-child {
+      border-radius:0px 2px;
+      box-shadow:1px 0px 10px var(--separator);
+    }
+
+    &:last-child {
+      border-radius:2px 0px;
+      box-shadow:1px 0px 10px var(--separator);
+    }
+  }
+}
+
+.active {  
+  font-weight:600;
+}

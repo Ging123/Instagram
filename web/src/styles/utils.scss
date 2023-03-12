@@ -5,6 +5,12 @@
   justify-content:$justify-content;
 }
 
+%text-overflow-ellipsis {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
 %align-y {
   top:50%;
   transform:translateY(-50%);
@@ -42,6 +48,19 @@
 
   &:active {
     opacity:.7;
+  }
+}
+
+@mixin change-color-effect($hover_color, $opacity_on_active) {
+
+  cursor:pointer;
+
+  &:hover {
+    background:$hover_color;
+  }
+
+  &:active {
+    filter:opacity($opacity_on_active);
   }
 }
 

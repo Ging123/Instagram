@@ -1,0 +1,40 @@
+@import "@/styles/utils.scss";
+
+.header {
+  @include flex(row, center, space-between);
+  background:white;
+  border:1px solid var(--separator);
+  left:0px;
+  padding:10px 20px;
+  position:fixed;
+  top:0px;
+  width:100%;
+  z-index:var(--nav-index);
+}
+
+.logo_container {
+  @include flex(row, center);
+  margin:0px;
+}
+
+.logo_arrow_down {
+  font-size:1.125rem;
+  margin-bottom:0.313rem;
+}
+
+.nav_container {
+  @include flex(row, center);
+  gap:10px;
+}
+
+.search_input {
+
+  input {
+    background:var(--secondary_background);
+    border:none;
+
+    &::placeholder {
+      color:gray;
+    }
+  }
+}

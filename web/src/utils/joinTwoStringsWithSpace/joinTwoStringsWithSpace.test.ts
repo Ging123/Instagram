@@ -8,6 +8,6 @@ test("Joins two strings", () => {
 test("Send just one string", async () => {
   const result = joinTwoStringsWithSpace("Test", undefined);
   expect(result).toBe("Test");
-}); 
+});
 
 export {};
