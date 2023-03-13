@@ -21,7 +21,7 @@
     width:auto;
   }
 
-  @include media-query(65.625rem) {
+  @include media-query(76.875rem) {
     width:250px;
   }
 }
@@ -71,7 +71,7 @@
     }
   }
 
-  @include media-query(65.625rem) {
+  @include media-query(76.875rem) {
     width:100%;
 
     p {

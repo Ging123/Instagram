@@ -1,0 +1,73 @@
+@import "@/styles/utils.scss";
+
+.container {
+  @include flex(column, center);
+  border-right:1px solid var(--separator);
+  color:var(--black_1);
+  display:flex;
+  height:100%;
+  width:100%;
+  
+  @include media-query(25rem) {
+    width:310px;
+  }
+}
+
+.info_container {
+  @include flex(row, center, center);
+  border-bottom:1px solid var(--separator);
+  gap:10px;
+  padding:15px;
+  position:relative;
+  width:100%;
+}
+
+.edit_icon {
+  position:absolute;
+  right:15px;
+}
+
+.chat_container {
+  @include flex(column, center);
+  gap:15px;
+  overflow:auto;
+  margin:0px;
+  padding:10px 15px;
+  width:100%;
+}
+
+.single_chat_container {
+  @include flex(row, center);
+  @extend %opacity-click-effect;
+  gap:15px;
+  width:100%;
+}
+
+.chat_image {
+  border-radius:100px;
+  height:50px;
+  object-fit:cover;
+  overflow:hidden;
+  position:relative;
+  width:50px;
+}
+
+.chat_info {
+
+  p {
+    @include text-ellipsis(200px);
+    padding:0;
+    margin:0;
+  }
+
+}
+
+.chat_name {
+  color:var(--black_1);
+  font-size:1rem;
+}
+
+.chat_last_message {
+  color:gray;
+  font-size:.9rem;
+}

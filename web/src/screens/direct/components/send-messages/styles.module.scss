@@ -1,0 +1,34 @@
+@import "@/styles/utils.scss";
+
+.container {
+  @include flex(column, center, center);
+  display:none;
+  height:100%;
+  flex-grow:1;
+  padding:15px;
+
+  @include media-query(25rem) {
+    display:flex;
+  }
+}
+
+.title {
+  font-weight:530;
+  margin:0;
+  margin-top:25px;
+  text-align:center;
+}
+
+.subtitle {
+  color:gray;
+  font-size:.9rem;
+  margin:10px 0px 20px 0px;
+  text-align:center;
+}
+
+.button {
+  background:var(--main_blue);
+  color:white;
+  font-weight:550;
+  max-width:150px;
+}

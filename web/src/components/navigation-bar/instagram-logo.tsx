@@ -9,7 +9,7 @@ const SmallLogo = dynamic(() => import("../../../public/images/small-logo"));
 const Link = dynamic(() => import("next/link"));
 
 const InstagramLogo = () => {
-  const isDesktop = useMediaQuery("65.625rem");
+  const isDesktop = useMediaQuery("76.875rem");
   const Logo = isDesktop ? SmallLogo : Instagram;
 
   return (

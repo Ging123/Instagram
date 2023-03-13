@@ -65,7 +65,14 @@
 }
 
 @mixin media-query($min-width) {
-  @media (min-width:$min-width) {
+  @media print, screen and (min-width:$min-width) {
     @content;
   }
+}
+
+@mixin text-ellipsis($max-width) {
+  max-width:$max-width;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
