@@ -17,12 +17,16 @@
 }
 
 .direct_container {
-  @include flex(row);
+  @include flex(column);
   background:white;
   border:1px solid var(--separator);
   border-radius:3px;
   height:90vh;
   width:100%;
+
+  @include media-query(37.5rem) {
+    @include flex(row);
+  }
 
   @include media-query(45rem) {
     width:80%;    

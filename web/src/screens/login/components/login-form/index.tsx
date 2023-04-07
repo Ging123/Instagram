@@ -1,14 +1,14 @@
-import Button from "../../../../components/button";
-import Input from "../../../../components/input";
+import Button from "../../../../components/buttons/button";
+import Input from "../../../../components/inputs/input";
 
-import Logo from "../../../../components/logo";
-import Or from "../../../../components/or";
+import Logo from "../../../../components/logos/logo";
+import Or from "../../../../components/separators/or";
 
 import styles from "./styles.module.scss";
-import Checkbox from "../../../../components/checkbox";
+import Checkbox from "../../../../components/inputs/checkbox";
 
 import { useState } from "react";
-import Box from "../../../../components/box";
+import Box from "../../../../components/containers/box";
 
 const LoginForm = () => {
   const [ login, setLogin ] = useState("");

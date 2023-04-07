@@ -7,8 +7,8 @@
   display:flex;
   height:100%;
   width:100%;
-  
-  @include media-query(25rem) {
+
+  @include media-query(37.5rem) {
     width:310px;
   }
 }
@@ -17,6 +17,8 @@
   @include flex(row, center, center);
   border-bottom:1px solid var(--separator);
   gap:10px;
+  min-height:60px;
+  max-height:60px;
   padding:15px;
   position:relative;
   width:100%;

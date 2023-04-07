@@ -1,11 +1,11 @@
 import LoginWithFacebook from "./login-with-facebook";
-import Button from "../../../../components/button";
+import Button from "../../../../components/buttons/button";
 
-import Input from "../../../../components/input";
-import Logo from "../../../../components/logo";
+import Input from "../../../../components/inputs/input";
+import Logo from "../../../../components/logos/logo";
 
-import Box from "../../../../components/box";
-import Or from "../../../../components/or";
+import Box from "../../../../components/containers/box";
+import Or from "../../../../components/separators/or";
 
 import styles from "./styles.module.scss";
 import { useState } from "react";

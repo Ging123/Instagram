@@ -1,4 +1,4 @@
-import Button from "../../../../components/button";
+import Button from "../../../../components/buttons/button";
 import styles from "./styles.module.scss";
 
 import Image from "next/image";

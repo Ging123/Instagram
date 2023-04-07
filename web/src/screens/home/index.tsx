@@ -3,8 +3,8 @@ import Sugestions from "./components/suggestions";
 
 import dynamic from "next/dynamic";
 
-const NavigationBar = dynamic(() => import("../../components/navigation-bar"));
-const Header = dynamic(import("../../components/header"), { ssr:false });
+const NavigationBar = dynamic(() => import("../../components/navigations/navigation-bar"));
+const Header = dynamic(import("../../components/navigations/header"), { ssr:false });
 
 const HomeScreen = () => {
   const isMobile = !useMediaQuery("45rem");

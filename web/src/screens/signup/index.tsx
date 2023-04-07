@@ -1,5 +1,5 @@
-import HaveAnAccount from "../../components/have-an-account";
-import GetTheApp from "../../components/get-the-app";
+import HaveAnAccount from "../../components/navigations/have-an-account";
+import GetTheApp from "../../components/navigations/get-the-app";
 
 import SignupForm from "./components/sign-up-form";
 import styles from "./styles.module.scss";

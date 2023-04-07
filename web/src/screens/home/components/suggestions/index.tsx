@@ -1,4 +1,4 @@
-import BigBox from "../../../../components/big-box";
+import BigBox from "../../../../components/containers/big-box";
 import Perfil from "./perfil";
 import styles from "./styles.module.scss";
 

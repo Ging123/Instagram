@@ -1,8 +1,6 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
-import Link from "next/link";
-
 export type ChatProps = {
   image:string;
   lastMessage?:string;
@@ -12,7 +10,7 @@ export type ChatProps = {
 }
 
 const Chat = (props:ChatProps) => {
-
+  
   function combineLastMessageWithTime() {
     let { timeOfMessage, lastMessage } = props;
     if(!lastMessage) return "";
@@ -26,9 +24,8 @@ const Chat = (props:ChatProps) => {
   const lastMessageWithTime = combineLastMessageWithTime();
   
   return (
-    <Link 
+    <div 
       className={ styles.single_chat_container }
-      href={`/direct/${props.username}`}
     >
 
       <div className={ styles.chat_image }>
@@ -49,7 +46,7 @@ const Chat = (props:ChatProps) => {
         </p>
       </div>
 
-    </Link>
+    </div>
   );
 };
 

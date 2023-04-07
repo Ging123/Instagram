@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
 
-import Box from "../../../../components/box";
+import Box from "../../../../components/containers/box";
 
 const DontHaveAccount = () => {
   return (

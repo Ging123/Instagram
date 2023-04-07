@@ -1,5 +1,5 @@
-import Button from "../../../../components/button";
-import Box from "../../../../components/box";
+import Button from "../../../../components/buttons/button";
+import Box from "../../../../components/containers/box";
 
 import styles from "./styles.module.scss";
 import Selects from "./selects";

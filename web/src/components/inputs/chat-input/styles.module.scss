@@ -1,0 +1,32 @@
+@import "@/styles/utils.scss";
+
+$container_sides_padding:20px;
+
+.input_container {
+  padding:0px $container_sides_padding;
+  position:relative;
+  width:100%;
+}
+
+.input {
+  border:1px solid var(--separator);
+  border-radius:100px;
+  font-size:1rem;
+  padding:10px 60px 10px 20px;
+  width:100%;
+
+  &:focus {
+    outline:none;
+
+    &::placeholder {
+      color:var(--placeholder_focus_gray);
+    }
+  }
+}
+
+.picture_icon {
+  @extend %opacity-click-effect;
+  @extend %align-y;
+  right:$container_sides_padding + 20px;
+  position:absolute;
+}

@@ -1,5 +1,5 @@
 import createNumberArray from "../../../../utils/createNumberArray";
-import Select from "../../../../components/select";
+import Select from "../../../../components/buttons/select";
 
 import { months } from "../../../../shared/constant/date";
 import styles from "./styles.module.scss";

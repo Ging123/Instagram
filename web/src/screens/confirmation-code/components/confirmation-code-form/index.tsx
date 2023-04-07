@@ -1,7 +1,7 @@
-import SecundaryInput from "../../../../components/secundary_input";
-import Button from "../../../../components/button";
+import SecundaryInput from "../../../../components/inputs/secundary_input";
+import Button from "../../../../components/buttons/button";
 
-import Box from "../../../../components/box";
+import Box from "../../../../components/containers/box";
 import styles from "./styles.module.scss";
 
 import { useState } from "react";

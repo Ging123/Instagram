@@ -1,0 +1,26 @@
+@import "@/styles/utils.scss";
+
+.modal {
+  background:var(--black-modal);
+  left:0px;
+  height:100vh;
+  position:fixed;
+  top:0px;
+  width:100%;
+  z-index:var(--modal-index);
+}
+
+.modal_image {
+  @extend %align-x-and-y;
+  height:500px;
+  position:fixed;
+  max-height:500px;
+  max-width:900px;
+  width:100%;
+  z-index:9999;
+
+  img {
+    object-fit:contain;
+    padding:25px;
+  }
+}

@@ -1,7 +1,7 @@
 import DontHaveAccount from "./components/dont-have-account";
 import useMediaQuery from "../../shared/hooks/useMediaQuery";
 
-import GetTheApp from "../../components/get-the-app";
+import GetTheApp from "../../components/navigations/get-the-app";
 import LoginForm from "./components/login-form";
 
 import CellPhone from "./components/cellphone";

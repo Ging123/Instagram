@@ -1,7 +1,7 @@
-import HaveAnAccount from "../../components/have-an-account";
+import HaveAnAccount from "../../components/navigations/have-an-account";
 import BirthdayForm from "./components/birthday-form";
 
-import GetTheApp from "../../components/get-the-app";
+import GetTheApp from "../../components/navigations/get-the-app";
 import styles from "./styles.module.scss";
 
 const BirthdayScreen = () => {

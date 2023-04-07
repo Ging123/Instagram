@@ -13,15 +13,23 @@ a {
   text-decoration:none;
 }
 
+label[hidden] {
+  display: none;
+}
+
 :root {
   --gray_1:#fafafa;
   --gray_2:#b9b8b8;
   --gray_3:#8e8e8e;
+  --placeholder_focus_gray:#d8d5d5;
   --secondary_background:#efefef;
   --black_1:#262626;
+  --black-modal:#0000006c;
   --main_background:#fcfcfc;
   --main_blue:#0095f6;
   --blue:#385185;
   --separator:#dbdbdb;
   --nav-index:99;
+
+  --modal-index:999;
 }
