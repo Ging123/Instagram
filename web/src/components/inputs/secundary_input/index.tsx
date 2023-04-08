@@ -2,14 +2,15 @@ import joinTwoStringsWithSpace from "../../../utils/joinTwoStringsWithSpace";
 import SearchIcon from "../../../../public/images/icons/search-icon";
 
 import { AiFillCloseCircle } from "react-icons/ai";
-
 import styles from "./styles.module.scss";
+
 import { useState } from "react";
 
 type changeEvent = React.ChangeEvent<HTMLInputElement>;
 
 interface props {
   className?:string;
+  searchInputClass?:string;
   maxLength?:number;
   onChange:(e:changeEvent) => void;
   placeholder?:string;
@@ -21,6 +22,11 @@ interface props {
 const SecundaryInput = (props:props) => {
   const className = joinTwoStringsWithSpace(styles.input_container, props.className);
   const [ focus, setFocus ] = useState(false);
+
+  const searchIconClasses = joinTwoStringsWithSpace(
+    styles.search_icon,
+    props.searchInputClass
+  );
 
   return (
     <div className={ className }>
@@ -39,14 +45,14 @@ const SecundaryInput = (props:props) => {
       />
       
       { props.type === "search" && !focus && 
-        <div className={ styles.search_icon }>
+        <div className={ searchIconClasses }>
           <SearchIcon/> 
         </div>
       }
 
       { props.type === "search" && focus && 
         <AiFillCloseCircle 
-          className={ styles.close_icon }
+          className={     styles.close_icon }
         />
       }
 

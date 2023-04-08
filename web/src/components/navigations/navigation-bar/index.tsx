@@ -13,6 +13,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 const InstagramLogo = dynamic(import("./instagram-logo"));
+const SearchBar = dynamic(import("../search-bar"));
 
 export type navigationType = "home" | "search" | "explore" | "reels" | "mensage" | "notification" | "create" | "profile";
 
@@ -24,8 +25,11 @@ const NavigationBar = (props:Props) => {
   const hasLogo = useMediaQuery("45rem");
   const [ selectedSection, setSelectedSection ] = useState<navigationType>("home"); 
 
+  const [ searchBarIsOpen, setSearchBarIsOpen ] = useState(false);
+
   function onClickLink(sectionName:navigationType) {
     setSelectedSection(sectionName);
+    if(sectionName === "search") return setSearchBarIsOpen(true);
   }
   
   return (
@@ -56,6 +60,8 @@ const NavigationBar = (props:Props) => {
       </main>
 
       <MoreOptions/>
+
+      { searchBarIsOpen && <SearchBar/> }
     </nav>
   );
 };

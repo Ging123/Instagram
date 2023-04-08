@@ -3,7 +3,7 @@ import { buttonType } from "../../../shared/types/input";
 
 import styles from "./styles.module.scss";
 
-interface props {
+interface Props {
   children?:React.ReactNode;
   className?:string;
   content?:string;
@@ -11,7 +11,7 @@ interface props {
   type:buttonType;
 }
 
-const Button = (props:props) => {
+const Button = (props:Props) => {
   const className = joinTwoStringsWithSpace(styles.button, props.className);
 
   return (

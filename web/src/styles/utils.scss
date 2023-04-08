@@ -5,6 +5,12 @@
   justify-content:$justify-content;
 }
 
+%without-default-button-styles {
+  background:none;
+  border:none;
+  padding:0;
+}
+
 %text-overflow-ellipsis {
   overflow:hidden;
   text-overflow:ellipsis;
@@ -75,4 +81,9 @@
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
+}
+
+@mixin dimentions($width, $height) {
+  height:$height;
+  width:$width;
 }
